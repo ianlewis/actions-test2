@@ -24,4 +24,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo ${{ vars.REPO_TEST }}
+          echo ${{ toJSON(vars.REPO_TEST) }}
